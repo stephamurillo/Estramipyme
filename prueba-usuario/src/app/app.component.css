@@ -1,0 +1,81 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Signika+Negative:wght@300..700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #1a1f36;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    font-family: "Signika Negative", sans-serif;
+    font-size: 20px;
+  }
+  body {
+      min-height: 100%;
+      background-color: #ffffff;
+  }
+
+
+  .navegacion{
+    display: flex;
+    background-color:  #04BEDF;
+    border-radius: 20px;
+    position:fixed;
+    width: 100%;
+    
+}
+.nav_menu{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+}
+ 
+.navegacion img{
+    width: 150px;
+}
+.nav_menu li a{
+    text-decoration: none;
+    color: black;
+}
+.nav_menu li a:hover{
+    color: #000066;
+}
+
+.active{
+    border-bottom: 2px solid #ffffff;
+}
+
+.nav_menu li a:hover{
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.menu__usuario--despegable{
+    position: absolute;
+    display: none;
+    list-style: none;
+    padding: 0%;
+    border: 10px;
+}
+
+.menu__usuario--despegable li {
+    padding: 5px 5px;
+    background-color: #04BEDF;
+    padding: 5px 5px 5px;
+    border: 10px;
+
+}
+.menu__usuario--despegable li a:hover{
+    color: #000;
+}
+.menu__usuario--despegable li a{
+    text-decoration: none;
+    color: #000;
+}
+.menu__usuario:hover > .menu__usuario--despegable{
+    display: block;
+} 

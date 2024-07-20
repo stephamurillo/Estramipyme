@@ -1,0 +1,23 @@
+<body>
+  
+<nav class="navegacion">
+  <div>
+    <img src="../assets/logo_azul_eafit (1).png" alt="" width="120px" height="70px">
+  </div>
+  <ul class="nav_menu">
+    <li><a  routerLink="inicio">Inicio</a></li>
+    <li><a  routerLink="testimonios">Testimonios</a></li>
+    <li class="menu__usuario"><a routerLink="">Perfil</a>
+    <ul class="menu__usuario--despegable "> 
+      <li><a  routerLink="/registro">Registro</a></li>
+      <li><a routerLink="/login">Iniciar Sesión</a></li>
+      <li><a routerLink="/contacto">Contacto</a></li>
+      <li><a routerLink="/inicio">Salir</a></li> 
+     </ul>
+
+     </li>
+  </ul>
+ 
+</nav>
+</body>
+<router-outlet></router-outlet>

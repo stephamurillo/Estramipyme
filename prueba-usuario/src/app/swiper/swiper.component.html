@@ -1,0 +1,22 @@
+<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let slide of slides">
+            <div class="icons">
+                <i class="fa-solid fa-circle arrow-left"></i>
+                <img [src]="slide.imgSrc" alt="">
+                <i class="fa-regular fa-heart"></i>
+            </div>
+            <div class="product-content">
+                <div class="product-txt">
+                    <span>{{slide.price}}</span>
+                    <h3>{{slide.title}}</h3>
+                    <p>{{slide.description}}</p>
+                </div>
+                <div class="product-img">
+                    <img [src]="slide.productImgSrc" alt="">
+                </div>
+            </div>
+            <a href="#" class="btn-1">ver más</a>
+        </div>
+    </div>
+</div>
